@@ -246,4 +246,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }.font-light {
   font-weight: 300;
+}.font-medium {
+  font-weight: 500;
+}.text-pink-500 {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
 }

@@ -13,6 +13,8 @@ const aliases = alias({
 	entries: [
 		{ find: "@components", replacement: "src/components" },
 		{ find: "@utils", replacement: "src/utils" },
+		{ find: "@assets", replacement: "src/assets" },
+		{ find: "@pages", replacement: "src/pages" },
 	],
 });
 
