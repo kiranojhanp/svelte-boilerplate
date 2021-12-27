@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { metatags } from "@roxi/routify";
 
 	metatags.title = "About Us Page";
