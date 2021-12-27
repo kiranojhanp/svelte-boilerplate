@@ -6,7 +6,7 @@
 	metatags.description = "Description coming soon...";
 </script>
 
-<h1>Svelte boilerplate</h1>
+<h1 class="font-light text-6xl">Svelte boilerplate</h1>
 <p>This is the first page of routify</p>
 
 <Hello />
