@@ -6,6 +6,15 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 import css from "rollup-plugin-css-only";
+import alias from "@rollup/plugin-alias";
+
+const aliases = alias({
+	resolve: [".svelte", ".js", ".ts"],
+	entries: [
+		{ find: "@components", replacement: "src/components" },
+		{ find: "@utils", replacement: "src/utils" },
+	],
+});
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -44,6 +53,7 @@ export default {
 		// file: "public/build/bundle.js",
 	},
 	plugins: [
+		aliases,
 		svelte({
 			preprocess: sveltePreprocess({ sourceMap: !production }),
 			compilerOptions: {
